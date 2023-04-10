@@ -19,6 +19,7 @@
   "homepage": "https://github.com/alexmarinmendez/45075-clase-26-process#readme",
   "dependencies": {
     "commander": "^10.0.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2"
   }
 }
