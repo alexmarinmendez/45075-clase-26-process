@@ -1,0 +1,24 @@
+{
+  "name": "45075-clase-26-process",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01-demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmarinmendez/45075-clase-26-process.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexmarinmendez/45075-clase-26-process/issues"
+  },
+  "homepage": "https://github.com/alexmarinmendez/45075-clase-26-process#readme",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "express": "^4.18.2"
+  }
+}
