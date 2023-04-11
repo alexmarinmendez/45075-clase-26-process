@@ -1,6 +1,11 @@
 const dotenv = require('dotenv')
+const enviroment = 'DEVELOPMENT'
 
-dotenv.config()
+dotenv.config({
+    path: enviroment === 'DEVELOPMENT'
+        ? './.env.development'
+        : './.env.production'
+})
 
 module.exports = {
     port: process.env.PORT,
@@ -8,3 +13,4 @@ module.exports = {
     adminName: process.env.ADMIN_NAME,
     adminPassword: process.env.ADMIN_PASS
 }
+

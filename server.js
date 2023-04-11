@@ -1,7 +1,6 @@
 const express = require('express')
 const { Command } = require('commander')
-const dotenv = require('dotenv')
-dotenv.config()
+const config = require('./config/config.js')
 
 const app = express()
 const program = new Command()
@@ -15,10 +14,7 @@ const port = program.opts().p
 
 app.get('/', (req, res) => {
     res.send({
-        port: process.env.PORT,
-        mongoUrl: process.env.MONGO_URL,
-        adminName: process.env.ADMIN_NAME,
-        adminPassword: process.env.ADMIN_PASS
+        config
     })
 })
 
